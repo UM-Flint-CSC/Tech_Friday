@@ -44,8 +44,22 @@ To get a full indepth tutorial on this subject I recommend that you watch ["The 
 
 `snail_rect.left -= 4`
 
-`if snail_rect.right <= 0:
-  snail_rect.left = 800`
+`if snail_rect.right <= 0: snail_rect.left = 800`
+
+## Adding the Player and Detecting Collisions
+
+`player_surf = pygame.image.load('Player/player_walk_1.png').convert_alpha() # (before loop)`
+
+`player_rect = player_surf.get_rect(midbottom = (80,300)) (before loop)`
+
+`if player_rect.colliderect(snail_rect): print('collision') # just for testing`
+
+## Animate the Player Jumping
+
+`player_gravity = 0 create a variable for gravity - Step 1 to create a gravit effect`
+
+
+
 
 
 
