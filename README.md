@@ -82,7 +82,8 @@ To get a full indepth tutorial on this subject I recommend that you watch ["The 
 
 `if player_rect.bottom >= 300:player_rect.bottom = 300 # add detection of player on floor`
 
+## End Game if the Snail Touches the Player
 
-
+game_active = True # create variable to game state (before loop)
 
 
