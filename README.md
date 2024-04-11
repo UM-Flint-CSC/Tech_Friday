@@ -14,17 +14,20 @@ test_surf.fill('Red') # set color of test_surf to red
 
 (inside loop)
 
-`screen.blit(test_surf,(100,50))`
+```python
+screen.blit(test_surf,(100,50))
+```
 
 ## Adding Images to Surface
 
-`sky_surf = pygame.image.load('Sky.png').convert() # create a surface object (before loop)`
-
-`screen.blit(sky_surf,(0,0)) # adds the surface object to the screen (inside loop)`
-
-`ground_surf = pygame.image.load('ground.png').convert() # create a surface object (before loop)`
-
-`screen.blit(ground_surf, (0, 300))  # adds the surface object to the screen`
+```python
+sky_surf = pygame.image.load('Sky.png').convert() # create a surface object (before loop)
+ground_surf = pygame.image.load('ground.png').convert() # create a surface object (before loop)
+```
+```python
+screen.blit(sky_surf,(0,0)) # adds the surface object to the screen (inside loop)
+screen.blit(ground_surf, (0, 300))  # adds the surface object to the screen
+```
 
 ## Adding Text Surface
 
