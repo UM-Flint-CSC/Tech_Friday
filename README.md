@@ -28,5 +28,7 @@ To get a full indepth tutorial on this subject I recommend that you watch ["The 
 
 `test_font = pygame.font.Font(None,50) # use pygame default font (before loop)`
 
-`score_surf = test_font.render(f'{score}', True, "Black") # adds the surface object to the screen'
+`score_surf = test_font.render(f'Score:', True, "Black") # adds the surface object to the screen (before loop)`
+
+`screen.blit(score_surf,(400,50)) # adds the surface object to the screen (inside loop)`
 
