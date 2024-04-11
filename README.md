@@ -7,8 +7,10 @@ To get a full indepth tutorial on this subject I recommend that you watch ["The 
 ## Adding Surfaces
 (before loop)
 
-`test_surf = pygame.Surface((100,100)) # create a surface object (rectangle)`
-`test_surf.fill('Red') # set color of test_surf to red`
+```python
+test_surf = pygame.Surface((100,100)) # create a surface object (rectangle)
+test_surf.fill('Red') # set color of test_surf to red
+```
 
 (inside loop)
 
