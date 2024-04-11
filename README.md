@@ -94,12 +94,19 @@ if event.type == pygame.KEYDOWN:
 
 ## Providing a Floor for the Player Character
 
-`and player_rect.bottom == 300 # combined with space key down condition`
+```python
+and player_rect.bottom == 300 # combined with space key down condition
+```
 
-`if player_rect.bottom >= 300:player_rect.bottom = 300 # add detection of player on floor`
+```python
+if player_rect.bottom >= 300:
+    player_rect.bottom = 300 # add detection of player on floor
+```
 
 ## End Game if the Snail Touches the Player
 
+```python
 game_active = True # create variable to game state (before loop)
+```
 
 
