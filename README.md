@@ -108,5 +108,15 @@ if player_rect.bottom >= 300:
 ```python
 game_active = True # create variable to game state (before loop)
 ```
+```python
+    if player_rect.colliderect(snail_rect):
+        game_active = False
+```
+```python
+if game_active:
+    # current game code
+else:
+    # draw game over screen
+```
 
 
