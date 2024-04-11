@@ -26,7 +26,7 @@ ground_surf = pygame.image.load('ground.png').convert() # create a surface objec
 ```
 ```python
 screen.blit(sky_surf,(0,0)) # adds the surface object to the screen (inside loop)
-screen.blit(ground_surf, (0, 300))  # adds the surface object to the screen
+screen.blit(ground_surf, (0, 300))  # adds the surface object to the screen (inside loop)
 ```
 
 ## Adding Text Surface
@@ -39,18 +39,21 @@ screen.blit(ground_surf, (0, 300))  # adds the surface object to the screen
 
 ## Adding An Image Surface to a Rectangle Object
 
-`snail_surf = pygame.image.load('snail/snail1.png').convert_alpha() # create a surface object (before loop)`
-
-`snail_rect = snail_surf.get_rect(bottomleft = (800,300)) # create a rectangle object (before loop)`
-    
-`screen.blit(snail_surf,snail_rect) # adds the rectangle object to the screen (inside loop)`
+```python
+snail_surf = pygame.image.load('snail/snail1.png').convert_alpha() # create a surface object (before loop)
+snail_rect = snail_surf.get_rect(bottomleft = (800,300)) # create a rectangle object (before loop)
+```
+```python
+screen.blit(snail_surf,snail_rect) # adds the rectangle object to the screen (inside loop)
+```
 
 ## Animating a Rectangle Object
 
-`snail_rect.left -= 4`
-
-`if snail_rect.right <= 0: 
-    snail_rect.left = 800`
+```python
+snail_rect.left -= 4
+if snail_rect.right <= 0: 
+    snail_rect.left = 800
+```
 
 ## Adding the Player Character and Detecting Collisions
 
