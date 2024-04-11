@@ -32,3 +32,22 @@ To get a full indepth tutorial on this subject I recommend that you watch ["The 
 
 `screen.blit(score_surf,(400,50)) # adds the surface object to the screen (inside loop)`
 
+## Adding An Image Surface to a Rectangle Object
+
+`snail_surf = pygame.image.load('snail/snail1.png').convert_alpha() # create a surface object (before loop)`
+
+`snail_rect = snail_surf.get_rect(bottomleft = (800,300)) # create a rectangle object (before loop)`
+    
+`screen.blit(snail_surf,snail_rect)`
+
+## Animating a Rectangle Object
+
+`snail_rect.left -= 4`
+
+`if snail_rect.right <= 0:
+  snail_rect.left = 800`
+
+
+
+
+
