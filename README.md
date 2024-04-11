@@ -2,6 +2,7 @@
 ## Login
 ### USER:  citevent
 ### PASS:  eventacc99
+#### https://github.com/UM-Flint-CSC/Tech_Friday
 ***
 This presentation for Tech Friday is a very brief introduction to using the Python game engine Pygame. 
 To get a full indepth tutorial on this subject I recommend that you watch ["The ultimate introduction to Pygame"](https://youtu.be/AY9MnQ4x3zk?si=eHUOPduFXs4LrxJO)
