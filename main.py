@@ -3,7 +3,7 @@ from sys import exit # import the exit function from sys module
 
 pygame.init()  # starts all sub parts of pygame needed to make a game
 screen = pygame.display.set_mode((800, 400)) # create a display surface to display the game
-pygame.display.set_caption("Tech Friday Game Design") # change the window caption
+pygame.display.set_caption("Tech Friday Game Design with PyGame") # change the window caption
 clock = pygame.time.Clock() # create clock object
 
 while True:
