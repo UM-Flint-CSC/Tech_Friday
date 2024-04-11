@@ -31,11 +31,13 @@ screen.blit(ground_surf, (0, 300))  # adds the surface object to the screen (ins
 
 ## Adding Text Surface
 
-`test_font = pygame.font.Font(None,50) # use pygame default font (before loop)`
-
-`score_surf = test_font.render(f'Score:', True, "Black") # adds the surface object to the screen (before loop)`
-
-`screen.blit(score_surf,(400,50)) # adds the surface object to the screen (inside loop)`
+```python
+test_font = pygame.font.Font(None,50) # use pygame default font (before loop)
+score_surf = test_font.render(f'Score:', True, "Black") # adds the surface object to the screen (before loop)
+```
+```python
+screen.blit(score_surf,(400,50)) # adds the surface object to the screen (inside loop)
+```
 
 ## Adding An Image Surface to a Rectangle Object
 
@@ -57,14 +59,18 @@ if snail_rect.right <= 0:
 
 ## Adding the Player Character and Detecting Collisions
 
-`player_surf = pygame.image.load('Player/player_walk_1.png').convert_alpha() # (before loop)`
+```python
+player_surf = pygame.image.load('Player/player_walk_1.png').convert_alpha() # (before loop)
+player_rect = player_surf.get_rect(midbottom = (80,300)) # create a rectangle object (before loop)
+```
 
-`player_rect = player_surf.get_rect(midbottom = (80,300)) # create a rectangle object (before loop)`
-
-`screen.blit(player_surf,player_rect) # adds the rectangle object to the screen (inside loop)`
-
-`if player_rect.colliderect(snail_rect):
-    print('collision') # just for testing`
+```python
+screen.blit(player_surf,player_rect) # adds the rectangle object to the screen (inside loop)
+```
+```python
+if player_rect.colliderect(snail_rect):
+    print('collision') # just for testing
+```
 
 ## Animate the Player Jumping
 
