@@ -1,7 +1,4 @@
 # Welcome to Tech Friday - Pygame Demonstration
-## Login
-### USER:  citevent
-### PASS:  eventacc99
 #### https://github.com/UM-Flint-CSC/Tech_Friday
 ***
 This presentation for Tech Friday is a very brief introduction to using the Python game engine Pygame. 
