@@ -74,21 +74,23 @@ if player_rect.colliderect(snail_rect):
 
 ## Animate the Player Jumping
 
-`player_gravity = 0 # create a variable to gravity value - Step 1 to create a gravity effect (before loop)`
+```python
+player_gravity = 0 # create a variable to gravity value - Step 1 to create a gravity effect (before loop)
+```
 
-`player_gravity += 1 # increment gravity value by 1 each frame (inside loop)`
-
-`player_rect.y += player_gravity # add the increasing gravity value to the play recangle y (vertical) position (inside loop)`
+```python
+player_gravity += 1 # increment gravity value by 1 each frame (inside loop)
+player_rect.y += player_gravity # add the increasing gravity value to the play recangle y (vertical) position (inside loop)
+```
 
 ## Space Key User Input To Jump
 
-`# add event to detect space key pressed inside the event for loop
-
-`if event.type == pygame.KEYDOWN:`
-
-`    if event.key == pygame.K_SPACE:`
-
-`        player_gravity = -20`
+```python
+# add event to detect space key pressed inside the event for loop
+if event.type == pygame.KEYDOWN:
+    if event.key == pygame.K_SPACE:
+        player_gravity = -20
+```
 
 ## Providing a Floor for the Player Character
 
