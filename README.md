@@ -43,7 +43,7 @@ screen.blit(score_surf,(400,50)) # adds the surface object to the screen (inside
 
 ```python
 snail_surf = pygame.image.load('snail/snail1.png').convert_alpha() # create a surface object (before loop)
-snail_rect = snail_surf.get_rect(bottomleft = (800,300)) # create a rectangle object (before loop)
+snail_rect = snail_surf.get_rect(bottomleft = (600,300)) # create a rectangle object (before loop)
 ```
 ```python
 screen.blit(snail_surf,snail_rect) # adds the rectangle object to the screen (inside loop)
