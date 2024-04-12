@@ -109,14 +109,31 @@ if player_rect.bottom >= 300:
 game_active = True # create variable to game state (before loop)
 ```
 ```python
-    if player_rect.colliderect(snail_rect):
-        game_active = False
+if player_rect.colliderect(snail_rect):
+    game_active = False
 ```
 ```python
 if game_active:
     # current game code
 else:
     # draw game over screen
+    screen.fill('Yellow')
+    test_font = pygame.font.Font(None, 90)  # use pygame default font (before loop)
+    game_end_surf = test_font.render(f'Game Over!', True, "Black")  # adds the surface object to the screen
+    game_end_rect = game_end_surf.get_rect(midbottom=(400,200))
+    screen.blit(game_end_surf, game_end_rect)
 ```
+## Restart the Game When User Presses Space Key
 
+```python
+# add if game_active test to event key down test and else clause to set game_active true
+if game_active:
+    #if event.type == pygame.KEYDOWN:
+        #if event.key == pygame.K_SPACE and player_rect.bottom == 300:  # combined with space key down conditio:
+            #player_gravity = -20
+else:
+    if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
+        game_active = True
+        snail_rect.left = 800
+```
 
