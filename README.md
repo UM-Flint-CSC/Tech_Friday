@@ -33,7 +33,7 @@ screen.blit(ground_surf, (0, 300))  # adds the surface object to the screen (ins
 
 ```python
 test_font = pygame.font.Font(None,50) # use pygame default font (before loop)
-score_surf = test_font.render(f'Score:', True, "Black") # adds the surface object to the screen (before loop)
+score_surf = test_font.render(f'SCORE', True, "Black") # adds the surface object to the screen (before loop)
 ```
 ```python
 screen.blit(score_surf,(400,50)) # adds the surface object to the screen (inside loop)
