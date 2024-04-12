@@ -15,7 +15,7 @@ test_surf.fill('Red') # set color of test_surf to red
 (inside loop)
 
 ```python
-screen.blit(test_surf,(100,50))
+screen.blit(test_surf,(100,50)) # adds the surface object to the screen (inside loop)
 ```
 
 ## Adding Images to Surface
